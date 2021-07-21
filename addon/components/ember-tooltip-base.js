@@ -269,7 +269,7 @@ export default Component.extend({
 
     this._cleanupTimers();
 
-    this.get('_tooltip').dispose();
+    if (this.get('_tooltip')) this.get('_tooltip').dispose();
 
     this._dispatchAction('onDestroy', this);
   },
