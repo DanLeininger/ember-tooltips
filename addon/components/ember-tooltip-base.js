@@ -351,6 +351,9 @@ export default Component.extend({
 
   createTooltip() {
     const target = this.get('target');
+    
+    if (!target) return;
+    
     const tooltipClass = this.get('tooltipClass');
     const arrowClass = this.get('arrowClass');
     const innerClass = this.get('innerClass');
