@@ -579,6 +579,10 @@ export default Component.extend({
     }
 
     const _tooltip = this.get('_tooltip');
+    
+    if (!_tooltip) {
+      return;
+    }
 
     _tooltip.show();
 
